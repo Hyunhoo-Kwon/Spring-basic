@@ -15,5 +15,9 @@
 		<property name="user" value="root" />
 		<property name="password" value="8975" />
 	</bean>
+	
+	<bean id="memberDao" class="spring.MemberDao">
+		<constructor-arg ref="dataSource" />
+	</bean>
 		
 </beans>
