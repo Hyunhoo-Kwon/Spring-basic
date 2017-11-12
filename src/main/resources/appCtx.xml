@@ -10,8 +10,8 @@
 		
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
 		destroy-method="close">
-		<property name="driverClass" value="com.mysql.jdbc.Driver" />
-		<property name="jdbcUrl" value="jdbc:mysql://localhost/spring4fs?characterEncoding=utf8" />
+		<property name="driverClass" value="org.mariadb.jdbc.Driver" />
+		<property name="jdbcUrl" value="jdbc:mariadb://localhost:53306/db-basic?characterEncoding=utf8" />
 		<property name="user" value="root" />
 		<property name="password" value="8975" />
 	</bean>
@@ -26,4 +26,8 @@
 	</bean>
 		
 	<tx:annotation-driven transaction-manager="transactionManager"/>
+	
+	<bean id="authService" class="spring.AuthService">
+		<property name="memberDao" ref="memberDao" /> 
+	</bean>
 </beans>
