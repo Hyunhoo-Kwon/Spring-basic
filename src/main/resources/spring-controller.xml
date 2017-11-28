@@ -17,4 +17,12 @@
 	</bean>
 	<bean class="controller.LogoutController" />
 
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<mvc:exclude-mapping path="/login/**"/>
+			<bean class="interceptor.AuthCheckInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
 </beans>
