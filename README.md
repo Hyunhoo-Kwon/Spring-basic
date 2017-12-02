@@ -5,6 +5,7 @@
 * Ch12.2 : <spring:message> 태그로 메시지 출력
 * Ch12.3 : 커맨드 객체 검증과 에러 코드 지정
   * 이메일 입력 값 검증
+  * validator 인터페이스 구현
 * Ch12.6 : 컨트롤러에서 HttpSession 사용
   * HttpSession을 이용한 로그인 상태 유지
 * Ch12.8 : 인터셉터 사용
