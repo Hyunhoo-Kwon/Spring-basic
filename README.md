@@ -1,6 +1,6 @@
 # Spring-basic
 
-## 로그인 기능 구현
+## 실습 - 로그인 기능 구현
 * Ch8 : DB연동 및 JdbcTemplate을 이용한 쿼리 실행
 * Ch12.2 : <spring:message> 태그로 메시지 출력
 * Ch12.3 : 커맨드 객체 검증과 에러 코드 지정
